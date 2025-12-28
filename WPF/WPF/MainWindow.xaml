@@ -19,14 +19,14 @@
                 <RowDefinition Height="Auto"/>
             </Grid.RowDefinitions>
 
-            <TextBlock Text="Login"
+            <TextBlock Name ="LoginBox" Text="Login"
                    Grid.Row="0"
                    HorizontalAlignment="Center"/>
 
             <TextBox Grid.Row="1"
                  Width="200"/>
 
-            <TextBlock Text="Hasło"
+            <TextBlock Name ="PasswordBox" Text="Hasło"
                    Grid.Row="2"
                    HorizontalAlignment="Center"
                    Margin="0,10,0,0"/>
@@ -38,6 +38,7 @@
                 Grid.Row="4"
                 Width="120"
                 Margin="0,15,0,0"
+                ClickMode="Press"
                 HorizontalAlignment="Center"/>
 
         </Grid>

@@ -8,5 +8,10 @@ namespace WPF
 {
     internal class Person
     {
+        private string name;
+        private string surname;
+
+        public string Name { get => name; set => name = value; }
+        public string Surname { get => surname; set => surname = value; }
     }
 }
