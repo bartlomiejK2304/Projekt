@@ -8,5 +8,6 @@ namespace WPF
 {
     internal class Uczen
     {
+        private List<Nauczyciel> Users = new List<Nauczyciel>();
     }
 }

@@ -23,6 +23,34 @@ namespace WPF
         public MainWindow()
         {
             InitializeComponent();
+
+        }
+
+
+
+        private void Button_Click(object sender, RoutedEventArgs e)
+        {
+
+            User User = new User();
+            string login = LoginBox.Text;
+            string haslo = PasswordBox.Text;
+
+            bool istnieje = User.Users.Any(n => n.Login == login);
+
+            if (istnieje)
+            {
+                MessageBox.Show("Login istnieje");
+            }
+            else
+            {
+                MessageBox.Show("Nie ma takiego loginu");
+            }
+
+        }
+
+        private void PasswordBox_TextChanged(object sender, TextChangedEventArgs e)
+        {
+
         }
     }
 }
