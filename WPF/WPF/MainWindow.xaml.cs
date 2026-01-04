@@ -15,42 +15,16 @@ using System.Windows.Shapes;
 
 namespace WPF
 {
-    /// <summary>
-    /// Logika interakcji dla klasy MainWindow.xaml
-    /// </summary>
+    
     public partial class MainWindow : Window
     {
         public MainWindow()
         {
             InitializeComponent();
+            
+            MainContent.Content = new Login();
 
         }
 
-
-
-        private void Button_Click(object sender, RoutedEventArgs e)
-        {
-
-            User User = new User();
-            string login = LoginBox.Text;
-            string haslo = PasswordBox.Text;
-
-            bool istnieje = User.Users.Any(n => n.Login == login);
-
-            if (istnieje)
-            {
-                MessageBox.Show("Login istnieje");
-            }
-            else
-            {
-                MessageBox.Show("Nie ma takiego loginu");
-            }
-
-        }
-
-        private void PasswordBox_TextChanged(object sender, TextChangedEventArgs e)
-        {
-
-        }
     }
 }
