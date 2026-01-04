@@ -47,5 +47,10 @@ namespace WPF
             }
 
         }
+
+        private void PasswordBox_TextChanged(object sender, TextChangedEventArgs e)
+        {
+
+        }
     }
 }
