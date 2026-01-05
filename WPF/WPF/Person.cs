@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace WPF
 {
-    internal class Person
+    abstract class Person
     {
         private string name;
         private string surname;
