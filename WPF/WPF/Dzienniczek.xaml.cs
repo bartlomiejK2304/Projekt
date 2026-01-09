@@ -36,5 +36,10 @@ namespace WPF
             var mainWindow = (MainWindow)Window.GetWindow(this);
             mainWindow.MainContent.Content = new Login(); // Powrót do ekranu logowania
         }
+        private void btnPoprzedni_Click(object sender, RoutedEventArgs e)
+        {
+            // Tutaj dodaj logikę obsługi przycisku "Poprzedni"
+        }
+
     }
 }
