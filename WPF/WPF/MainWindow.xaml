@@ -5,6 +5,10 @@
         WindowState="Maximized">
 
     <Grid Background="#282D34">
-        <ContentControl x:Name="MainContent" />
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="9*"/>
+            <ColumnDefinition Width="7*"/>
+        </Grid.ColumnDefinitions>
+        <ContentControl x:Name="MainContent" Grid.ColumnSpan="2" />
     </Grid>
 </Window>

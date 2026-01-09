@@ -4,13 +4,9 @@ using System.Text;
 
 namespace Dzienniczek
 {
-    public class Uczen : Osoba
+    internal class Przedmiot
     {
-        public override void WypiszInfo()
-        {
-
-        }
+        string nazwa;
 
     }
-
 }
