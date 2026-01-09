@@ -41,8 +41,8 @@
                 Padding="20" 
                 HorizontalAlignment="Center" 
                 VerticalAlignment="Center" 
-                Height="220" 
-                Width="393">
+                Height="232" 
+                Width="592">
 
             <Grid>
                 <Grid.RowDefinitions>
